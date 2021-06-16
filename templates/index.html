@@ -20,7 +20,16 @@
         <br>
         <div>
             <form action="/display" method="get">
-               Magnitude: <input type="text" name="fmagnitude"/>
+               Enter a magnitude greater than 5.0: <input type="text" name="fmagnitude"/>
+             <input type="submit" value="Submit"><br/><br/>
+           </form>
+        </div><br/>
+        <div>
+            <form action="/etimeDisplay" method="get">
+               eTime_Lowerlimit: <input type="text" name="fetimeRange1"/>
+               eTime_Upperlimit: <input type="text" name="fetimeange2"/>
+               depth_Lowerlimit: <input type="text" name="fdepthRange1"/>
+               depth_Upperlimit: <input type="text" name="fdepthRange2"/>
              <input type="submit" value="Submit"><br/><br/>
            </form>
         </div><br/>
@@ -32,7 +41,38 @@
                To Date:   <input type="date" name="fdateRange2">
              <input type="submit" value="Submit"><br/><br/>
            </form>
-           </div><br/>
+        </div><br/>
+
+        <div>
+            <form action="/timeDisplay" method="get">
+               Time_Lowerlimit: <input type="text" name="ftimeRange1"/>
+               Time_Upperlimit: <input type="text" name="ftimeRange2"/>
+             <input type="submit" value="Submit"><br/><br/>
+           </form>
+        </div><br/>
+            <div>
+                <form action="/locationDisplay" method="get">
+                   Latitude: <input type="text" name="flatitude"/>
+                   Longitude: <input type="text" name="flongitude"/>
+                   Surrounding Range in KM: <input type="text" name="fkmrange"/>
+                 <input type="submit" value="Submit"><br/><br/>
+               </form>
+               </div><br/>
+
+            <div>
+            <form action="/clusterDisplay" method="get">
+               Find cluster of earthquakes with Magnitude: <input type="text" name="fclustermag"/>
+             <input type="submit" value="Submit"><br/><br/>
+           </form>
+        </div><br/>
+        <div>
+            <form action="/nightDisplay" method="get">
+               <p>Want to know how many earthquakes occure at night? Enter a value and Click on the submit button below</p>
+               Large Magnitude: <input type="text" name="flargemag">
+             <input type="submit" value="Submit"><br/><br/>
+           </form>
+        </div><br/>
+        
 
           
     </body>
